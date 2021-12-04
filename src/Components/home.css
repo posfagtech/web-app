@@ -1,0 +1,148 @@
+@import url("../animate.min.css");
+.bn{
+    background-color: #1C85E8;
+    color:#fbfdff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 3px 3px #888;
+  }
+  .nav-link .active{
+    color:#1C85E8;
+  }
+
+  .form-group{
+    border-radius: 10px;
+  }
+
+  .nav-item a {
+    text-transform: uppercase;
+    color:black;
+  }
+  #myMenu{
+    justify-content: center;
+  }
+  .header-1{
+    margin-top: 2em;
+    margin-right: -1em;
+  }
+  .header-2{
+    margin-top: -2em;
+    margin-left: -2em;
+  }
+  #slice{
+    margin-top: -9em;
+    height: 718px;
+    width: 818px
+  }
+.mds{
+  margin-top:2em;
+}
+#footer{
+  padding-top:6em;
+  padding: 4em;
+}
+
+  @media screen and (max-width:1400px) {
+    *{
+      padding:0;
+      margin: 0;
+    }
+    #slice{
+      /* margin-top:-9em; */
+      width: 688px;
+      height: 418px;
+      margin-left: -6em;
+    }
+
+    .bn{
+      background-color: #1C85E8;
+      color:#fbfdff;
+      font-weight: bold;
+      border-radius: 10px;
+      /* background-color: rgba(184, 184, 184, 0.514); */
+    }
+    #footer{
+      padding: 2em;
+    }
+  }
+  @media screen and (max-width:900px) {
+    *{
+      padding:0;
+      margin: 0;
+    }
+    #slice{
+      margin-top:0em;
+      width: 818px;
+      height: 418px;
+      margin-left: -6em;
+    }
+    .bn{
+      background-color: #1C85E8;
+      color:#fbfdff;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .s{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:600px) {
+    *{
+      padding:0;
+      margin: 0;
+    }
+    .header-1{
+      margin-top: -2em;
+      margin-right: -1em;
+    }
+    #slice{
+      margin-top:0;
+      width: 460px;
+      height: 318px;
+      padding: 0;
+      margin-left: -1em;
+    }
+    .bn{
+      background-color: #1C85E8;
+      color:#fbfdff;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .mds{
+      margin-top:0;
+    }
+    #footer{
+      padding: 1em;
+      background-position: center;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    *{
+      padding:0;
+      margin: 0;
+    }
+    .header-1{
+      margin-top: -2em;
+      margin-right: -1em;
+    }
+    #slice{
+      margin-top:0;
+      width: 420px;
+      height: 308px;
+      padding: 0;
+      margin-left: -3.5em;
+    }
+    .bn{
+      background-color: #1C85E8;
+      color:#fbfdff;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .mds{
+      margin-top:0;
+    }
+  }
+  

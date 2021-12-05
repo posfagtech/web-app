@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import "../../animate.min.css"
 
 const Navbar = () => {
+    const currentRoute = useHistory().location.pathname.toLowerCase()
     return (
-        <nav style={style.nav} className="navbar navbar-expand-md bg-white navbar-light mb-5">
+        <nav style={style.nav} className="navbar navbar-expand-md bg-white navbar-light">
             <div className="container">
                 <Link to="/" className="navbar-brand">
                     <svg width="80" className="animated slideInLeft" height="90" viewBox="0 0 431 408" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,19 +50,19 @@ const Navbar = () => {
                 <div className="navbar-collapse collapse" id="myMenu">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link active">Home</Link>
+                            <Link to="/" className={currentRoute.includes("home")?"nav-link actives" : "nav-link"}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/services" className="nav-link">Services</Link>
+                            <Link to="/services" className={currentRoute.includes('services') ? "nav-link actives" : "nav-link"}>Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/projects" className="nav-link">Projects</Link>
+                            <Link to="/projects" className={currentRoute.includes('projects') ? "nav-link actives" : "nav-link"}>Projects</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link">Contact Us</Link>
+                            <Link to="/contact" className={currentRoute.includes('contact') ? "nav-link actives" : "nav-link"}>Contact Us</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/tech" className="nav-link">Tech</Link>
+                            <Link to="/tech" className={currentRoute.includes('tech')? "nav-link actives" : "nav-link"}>Tech</Link>
                         </li>
                     </ul>
                 </div>

@@ -8,9 +8,12 @@
     border: none;
     box-shadow: 3px 3px #888;
   }
-  .nav-link .active{
-    color:#1C85E8;
-  }
+.actives{
+  color: #1C85E8;
+}
+.actives:hover{
+  color: #fbfdff;
+}
 
   .form-group{
     border-radius: 10px;

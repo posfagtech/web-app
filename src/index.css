@@ -35,6 +35,13 @@ code {
   margin-right: -1em;
 } */
 
+.actives{
+  color: #1C85E8;
+}
+.actives:hover{
+  color: #fbfdff;
+}
+
 input{
   border: none;
 }
@@ -43,4 +50,18 @@ input{
   background-image: url("./assets/Rectangle.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/*contact page*/
+.contact_header, .service_header, .project_header{
+  width: 100%;
+  /*padding: 10px;*/
+  background-image: url("./assets/Rectangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact_bg, .service_bg, .product_bg{
+  background-color: rgba(0, 0, 0, 0.63);
 }

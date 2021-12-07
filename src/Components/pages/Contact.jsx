@@ -1,10 +1,16 @@
 import React from 'react'
 import Navbar from "../subComponents/Navbar"
 import Footer from "../subComponents/Footer"
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
 	return (
 		<div>
+			<Helmet>
+                <title>POSFAGTECH - Contact</title>
+                <meta name="description" content="Do you need solutions at the very moment? contact us now..." />
+                <link rel="canonical" href="/contact" />
+            </Helmet>
 			<Navbar />
 			<div className="contact_header">
 				<div className="container-fluid contact_bg" style={{padding:"3em"}}>

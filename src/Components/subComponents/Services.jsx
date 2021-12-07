@@ -6,6 +6,8 @@ const Services = () => {
             <div className="container mt-3">
                 <center><h1 className="text-center" style={{color:"#1C85E8", width:"9em",fontWeight:"bolder"}}>Best services we provided.</h1></center>
                 <p className="text-center text-scondary">We hope for your best services and solution.</p>
+                
+                {/* service grid */}
                 <div className="row mt-5 mb-5">
                     <div className="col-lg-4 col-md-12 col-sm-12 mt-3">
                         <div className="card pt-5 shadow">
@@ -55,6 +57,8 @@ const Services = () => {
                 </div>
 
             </div>
+
+            {/* Clients review  */}
             <div className="container p-5 shadow-lg">
                 <div className="conatiner p-3 pl-5">
                     <h1 className="display-3" style={{fontWeight:"bolder",width:"75%"}}>
@@ -66,11 +70,7 @@ const Services = () => {
                         Employee empowerment and recognition are the core of our culture and how we achieve outstanding customer service.
                     </p>
                 </div>
-                <div className="float-end">
-                    <button className="btn btn-outline-primary">
-                        <h4>HIRE US</h4>
-                    </button>
-                </div> <br />
+                 <br />
             </div>
         </div>
     )

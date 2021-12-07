@@ -35,10 +35,11 @@ code {
   margin-right: -1em;
 } */
 
-.actives{
-  color: #1C85E8;
+.active{
+  /* color: #1C85E8; */
+  font-weight: 500;
 }
-.actives:hover{
+.active:hover{
   color: #fbfdff;
 }
 
@@ -62,6 +63,6 @@ input{
   background-size: cover;
 }
 
-.contact_bg, .service_bg, .product_bg{
+.contact_bg, .service_bg, .project_bg{
   background-color: rgba(0, 0, 0, 0.63);
 }

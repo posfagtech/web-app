@@ -1,10 +1,16 @@
 import React from 'react';
 import Navbar from "../subComponents/Navbar";
 import Footer from "../subComponents/Footer";
+import { Helmet } from 'react-helmet-async';
 
 const Services = () => {
     return (
         <div>
+            <Helmet>
+                <title>POSFAGTECH - Services</title>
+                <meta name="description" content="What we offer you are solutions you need at the very moment." />
+                <link rel="canonical" href="/services" />
+            </Helmet>
             <Navbar />
             <div className="service_header">
                 <div className="container-fluid service_bg" style={{padding:"3em"}}>

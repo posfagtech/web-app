@@ -50,19 +50,19 @@ const Navbar = () => {
                 <div className="navbar-collapse collapse" id="myMenu">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link to="/" className={currentRoute.includes("home")?"nav-link actives" : "nav-link"}>Home</Link>
+                            <Link to="/" className={currentRoute.includes("") ? "nav-link active" : "nav-link"}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/services" className={currentRoute.includes('services') ? "nav-link actives" : "nav-link"}>Services</Link>
+                            <Link to="/services" className={currentRoute.includes("services") ? "nav-link active" : "nav-link"}>Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/projects" className={currentRoute.includes('projects') ? "nav-link actives" : "nav-link"}>Projects</Link>
+                            <Link to="/projects" className={currentRoute.includes("projects") ? "nav-link active" : "nav-link"}>Projects</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className={currentRoute.includes('contact') ? "nav-link actives" : "nav-link"}>Contact Us</Link>
+                            <Link to="/contact" className={currentRoute.includes('contact') ? "nav-link active" : "nav-link"}>Contact Us</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/tech" className={currentRoute.includes('tech')? "nav-link actives" : "nav-link"}>Tech</Link>
+                            <Link to="/tech" className={currentRoute.includes("tech")? "nav-link active" : "nav-link"}>Tech</Link>
                         </li>
                     </ul>
                 </div>

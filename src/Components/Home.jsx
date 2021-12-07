@@ -5,12 +5,20 @@ import "../animate.min.css"
 import Services from './subComponents/Services'
 import Contact from './subComponents/Contact';
 import Footer from './subComponents/Footer';
+import { Helmet } from 'react-helmet-async';
 
 class Home extends React.Component {
     render() { 
         return <>
+            <Helmet>
+                <title>POSFAGTECH - Home</title>
+                <meta name="description" content="Welcome to the home of solution, we provide you solutions you need at the very moment." />
+                <link rel="canonical" href="/" />
+            </Helmet>
             <div style={{width:"100%"}}>
                 <Navbar />
+
+                {/* Header section */}
                 <div className="container-fluid pt-5 mt-5">
                         <div className="container mt-3">
                             <div className="row w-12 justify-center mt-3">
@@ -191,6 +199,7 @@ class Home extends React.Component {
                         </div>
 
                 </div>
+                
                 <Services />
                 <Contact />
                 <Footer />
